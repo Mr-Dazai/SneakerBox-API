@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="assets/logo.png" alt="logo" width="500" height="200" />
+  <img src="assets/logo.png" alt="logo" width="500" height="500" />
   <h1>SneakerBox-API</h1>
   
   <p>
