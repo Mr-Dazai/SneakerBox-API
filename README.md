@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="assets/logo.png" alt="logo" width="200" height="auto" />
+  <img src="assets/logo.png" alt="logo" width="500" height="auto" />
   <h1>SneakerBox-API</h1>
   
   <p>
@@ -12,15 +12,6 @@
 <p>
   <a href="#">
     <img src="https://img.shields.io/github/last-commit/Mr-Dazai/SneakerBox-API" alt="last update" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/network/members">
-    <img src="https://img.shields.io/github/forks/Louis3797/awesome-readme-template" alt="forks" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/stargazers">
-    <img src="https://img.shields.io/github/stars/Louis3797/awesome-readme-template" alt="stars" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/issues/">
-    <img src="https://img.shields.io/github/issues/Louis3797/awesome-readme-template" alt="open issues" />
   </a>
   <a href="https://github.com/Mr-Dazai/SneakerBox-API/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/Mr-Dazai/SneakerBox-API.svg" alt="license" />
