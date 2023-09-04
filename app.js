@@ -13,6 +13,9 @@ const app = express()
 //Connect Database
 const connectDB = require('./db/connect')
 
+//Routers
+const authRouter = require('./routes/authRoutes')
+
 //Middleware import
 const notFoundMiddleware = require('./middleware/not-found')
 const errorhandler = require('./middleware/error-handler')
@@ -25,6 +28,7 @@ app.get('/', (req, res) => {
   res.send('E-Commerse App')
 })
 
+app.use('/api/v1/auth', authRouter)
 // Error Handleing
 app.use(notFoundMiddleware)
 app.use(errorhandler)
