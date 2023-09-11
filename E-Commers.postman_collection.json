@@ -1,0 +1,545 @@
+{
+	"info": {
+		"_postman_id": "313571e0-61f8-438e-92da-7d0584afc625",
+		"name": "E-Commers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24613731"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "getAllUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/64f93b73692d6342f7e071c7",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"64f93b73692d6342f7e071c7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Peter\",\r\n    \"email\":\"peter@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/users/updateUser",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUserPassword",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"newPassword\":\"peter@123\",\r\n    \"oldPassword\":\"secret\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/users/updateUserPassword",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"updateUserPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getShowmeUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/showme",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"showme"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "getAllProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/products/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\": \"adidas Unity Leather Mid RAIN.RDY Hiking Boots\",\r\n    \"price\": 69.99,\r\n    \"company\": \"adidas\",\r\n    \"description\": \"Make strides in style with the adidas Terrex Unity Lea Mid. Featuring a coated leather and textile upper, these silhouettes offer a durable fit and a relaxed feel. The waterproof technology provides a dry and comfortable fit, while the soft and durable synthetic lining ensures excellent comfort.\",\r\n    \"category\": \"boots\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/products/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uploadImage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/products/uploadImage",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"products",
+								"uploadImage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/products/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateProduct",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/products/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProduct",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/products/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "geSingleProductReview",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Logout User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/auth/logout",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register User",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"boom\",\r\n    \"email\":\"boom@gmail.com\",\r\n    \"password\":\"boom123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/auth/register",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"boom@gmail.com\",\r\n    \"password\":\"boom123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/auth/login",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "getAllReviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/reviews/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reviews",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createReview",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":\"64fe4efd6267d724561d6c10\",\r\n    \"rating\":\"5\",\r\n    \"title\":\"Good Product\",\r\n    \"comment\":\"very very good\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/reviews/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reviews",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleReview",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/reviews/64fe78678fed7586f41a38f3",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reviews",
+								"64fe78678fed7586f41a38f3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateReview",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":\"64fe4efd6267d724561d6c10\",\r\n    \"rating\":\"4\",\r\n    \"title\":\"Good Product\",\r\n    \"comment\":\"The best product\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/reviews/64fe7957988ab4fa09bd0828",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reviews",
+								"64fe7957988ab4fa09bd0828"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteReview",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/reviews/64fe78678fed7586f41a38f3",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reviews",
+								"64fe78678fed7586f41a38f3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "getAllOrders",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "createOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/orders/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCurrentUserOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/orders/showAllMyOrders",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"orders",
+								"showAllMyOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleOrder",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/orders/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"orders",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateOrder",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
