@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Nike Air Force 1 '07",
+    "price": 110,
+    "image": "https://dl.airtable.com/.attachmentThumbnails/e8bc3791196535af65f40e36993b9e1f/438bd160",
+    "colors": ["#ff0000", "#00ff00", "#0000ff"],
+    "company": "nike",
+    "description": "Get the fresh style and classic looks you need with the Nike Air Force 1 '07.",
+    "category": "sneakers"
+  },
+  {
+    "name": "New Balance 9060",
+    "price": 150,
+    "image": "https://dl.airtable.com/.attachmentThumbnails/0be1af59cf889899b5c9abb1e4db38a4/d631ac52",
+    "colors": ["#000", "#ffb900"],
+    "company": "newbalance",
+    "description": "Step into the future with the New Balance 9060! Taking inspiration from the iconic 99X series, these sneakers flaunt a fresh expression of refined style and innovation-led design. Featuring a premium mesh upper with pigskin suede overlays, these shoes offer excellent comfort and a durable fit. The 990-inspired sway bars throughout the upper provide a sense of visible motion, while the wavy lines and scaled-up proportions on the pod midsole deliver an exaggerated feel and a comfy fit.",
+    "category": "sneakers"
+  },
+  {
+    "name": "adidas Unity Leather Mid RAIN.RDY Hiking Boots",
+    "price": 69.99,
+    "image": "https://dl.airtable.com/.attachmentThumbnails/530c07c5ade5acd9934c8dd334458b86/cf91397f",
+    "colors": ["#000", "#00ff00", "#0000ff"],
+    "company": "adidas",
+    "description": "Make strides in style with the adidas Terrex Unity Lea Mid. Featuring a coated leather and textile upper, these silhouettes offer a durable fit and a relaxed feel. The waterproof technology provides a dry and comfortable fit, while the soft and durable synthetic lining ensures excellent comfort.",
+    "category": "boots"
+  },
+  {
+    "name": "Nike Victori One Slides",
+    "price": 35,
+    "image": "https://dl.airtable.com/.attachmentThumbnails/0446e84c5bca9643de3452a61b2d6195/1b32f48b",
+    "colors": ["#0000ff", "#000"],
+    "company": "nike",
+    "description": "Soft and cushy, the Nike Victori One Slides are all about the ease you need during your leisure time. Featuring responsive foam and mechanical cushioning, these slides deliver unbelievable comfort and help you relax and rejuvenate without any distractions. The new padded strap feels as good as it looks, while the contoured grip pattern helps cradle and hold your foot in place.",
+    "category": "sandals"
+  }
+]
