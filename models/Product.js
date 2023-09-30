@@ -44,7 +44,7 @@ const ProductSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    freeShipping: {
+    shipping: {
       type: Boolean,
       default: false,
     },
